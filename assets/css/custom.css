@@ -349,7 +349,7 @@ section.main-content {
 }
 
 .feature-image-default {
-  background: url('../img/stuff-feature.jpg') no-repeat;
+  background: url('../img/run.jpg') no-repeat;
   background-size: cover;
 }
 
@@ -449,7 +449,7 @@ section.main-content {
 
 #signup {
   text-align: center;
-  background: url('../img/workout-stuff.jpg') center center repeat fixed;
+  background: url('../img/workout-stuff.jpg') center fixed;
   background-size: cover;
   color: white;
   padding: 140px 0;
@@ -513,6 +513,9 @@ footer li.signup-link a:hover {
   padding: 20px;
 }
 
+.post-example {
+  padding-top: 40px
+}
 .post header h3 {
   margin: 0 0 15px;
   padding: 0 0 15px;
