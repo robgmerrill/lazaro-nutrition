@@ -19,6 +19,8 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
   <!-- font-family: 'Raleway', sans-serif; -->
 
+<!-- Custom CSS -->
+  <link href="assets/css/custom.css" rel="stylesheet">
 
 </head>
 <body>
@@ -55,13 +57,58 @@
 
   <!-- HERO -->
   <section>
-    
+   <section id="hero" data-type="background" data-speed="5">
+      <article>
+        <div class="container clearfix">
+          <div class="row">
+          
+            <div class="col-sm-5">
+              <!-- <img src="assets/img/logo-badge.png" alt="Lazaro Nutrition" class="logo"> -->
+            </div><!-- col -->
+            
+            <div class="col-sm-7 hero-text">
+              <h1>Lazaro Nutrion</h1>
+                  <p class="lead">Get Healthy - Check out our offers to help you step into a new you with our monthly plans</p>
+                  
+                  <div id="price-timeline">
+                    <div class="price active">
+                      <h4>Nutrition Plan <!-- <small>Ends soon!</small> --></h4>
+                      <span>$149</span>
+                    </div><!-- end price -->
+                    <div class="price">
+                      <h4>Workout Plan<!-- <small>Coming soon!</small> --></h4>
+                      <span>$299</span>
+                    </div><!-- end price -->
+                    <div class="price">
+                      <h4>Workshops <!-- <small>Coming soon!</small> --></h4>
+                      <span>$399</span>
+                    </div><!-- end price -->
+                  </div><!-- price-timeline -->
+
+                  <p><a class="btn btn-lg btn-danger" href="/" role="button">Enroll now &raquo;</a></p>
+            </div><!-- col -->
+            
+          </div><!-- row -->
+        </div><!-- container -->
+      </article>
+    </section>  
   </section>
 
   <!-- OPT IN SECTION -->
 
-  <section>
-    
+  <section id="optin">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-8">
+          <p class="lead"><strong>Subscribe to our mailing list.</strong> We'll send something special as a thank you.</p>
+
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">Click here to subscribe</button>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- BOOST YOUR INCOME -->
@@ -112,13 +159,38 @@
 
 <!-- MODAL -->
 
-  <div>
-    
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i>Subscribe to our mailing list</h4>
+          
+      </div>
+      <div class="modal-body">
+        <p>Simply enter your name and email. As a thank you for joining us, we're going to give you a special offer for one of our programs for free</p>
+
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <label class="sr-only" for="subscribe-name">Your first name</label>
+            <input type="test" class="form-control" id="subscribe-name" placeholder="Your first name">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="subscribe-email">Your email</label>
+            <input type="test" class="form-control" id="subscribe-email" placeholder="Your email">
+          </div>
+          <input type="submit" class="btn btn-danger" value="Subscribe!">
+        </form>
+        <p><small>By providing your email you consent to receiving occasional promotional emails and newsletters.<br>No spam. Just good stuff. We respect your privacy and you may unsubscribe at any time</small></p>
+      </div>
+    </div>
   </div>
+</div>
 
 <!-- BOOTSTRAP CORE JAVASCRIPT -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="assets/js/jquery-2.1.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
